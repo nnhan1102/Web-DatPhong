@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opulent - Đặt Tour Du Lịch Cao Cấp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-crown"></i>
+          <span>Opulent</span>
+          <span class="logo-subtitle">Premium Travel</span>
+        </a>
+
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html" class="nav-link active"
+              ><i class="fas fa-home"></i> Trang chủ</a
+            >
+          </li>
+          <li class="dropdown">
+            <a href="tours.html" class="nav-link">
+              <i class="fas fa-map-marked-alt"></i> Tour
+              <i class="fas fa-chevron-down dropdown-icon"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="tours.html?category=trong-nuoc"
+                ><i class="fas fa-map"></i> Tour Trong Nước</a
+              >
+              <a href="tours.html?category=quoc-te"
+                ><i class="fas fa-globe-asia"></i> Tour Quốc Tế</a
+              >
+              <a href="tours.html?category=cao-cap"
+                ><i class="fas fa-gem"></i> Tour Cao Cấp</a
+              >
+              <a href="tours.html?category=gia-dinh"
+                ><i class="fas fa-users"></i> Tour Gia Đình</a
+              >
+            </div>
+          </li>
+          <li>
+            <a href="hotels.html" class="nav-link"
+              ><i class="fas fa-hotel"></i> Khách sạn</a
+            >
+          </li>
+          <li>
+            <a href="flights.html" class="nav-link"
+              ><i class="fas fa-plane"></i> Vé máy bay</a
+            >
+          </li>
+          <li>
+            <a href="promotions.html" class="nav-link"
+              ><i class="fas fa-gift"></i> Khuyến mãi</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="nav-link"
+              ><i class="fas fa-info-circle"></i> Về chúng tôi</a
+            >
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="search-box">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Tìm kiếm tour..."
+            />
+          </div>
+          <a href="admin/index.html" class="admin-btn" title="Trang quản trị">
+            <i class="fas fa-user-cog"></i>
+          </a>
+          <a href="#" class="btn btn-outline btn-login" id="login-btn">
+            <i class="fas fa-user"></i> Đăng nhập
+          </a>
+          <button class="mobile-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide hero-slide slide-1">
+            <div class="container">
+              <div class="hero-content">
+                <h1 class="hero-title">Khám Phá Thế Giới Với Phong Cách</h1>
+                <p class="hero-subtitle">
+                  Hơn 5,000 tour du lịch cao cấp - Trải nghiệm đẳng cấp 5 sao
+                </p>
+                <div class="hero-buttons">
+                  <a href="tours.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-map-marked-alt"></i> Khám phá ngay
+                  </a>
+                  <a href="#featured" class="btn btn-outline btn-lg">
+                    <i class="fas fa-play-circle"></i> Xem video
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide hero-slide slide-2">
+            <div class="container">
+              <div class="hero-content">
+                <h1 class="hero-title">Kỳ Nghỉ Hoàn Hảo Cho Gia Đình</h1>
+                <p class="hero-subtitle">
+                  Tour gia đình cao cấp với dịch vụ chăm sóc tận tâm
+                </p>
+                <div class="hero-buttons">
+                  <a
+                    href="tours.html?category=gia-dinh"
+                    class="btn btn-primary btn-lg"
+                  >
+                    <i class="fas fa-users"></i> Tour gia đình
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide hero-slide slide-3">
+            <div class="container">
+              <div class="hero-content">
+                <h1 class="hero-title">Trải Nghiệm Văn Hóa Độc Đáo</h1>
+                <p class="hero-subtitle">
+                  Khám phá những nền văn hóa đặc sắc nhất thế giới
+                </p>
+                <div class="hero-buttons">
+                  <a
+                    href="tours.html?category=quoc-te"
+                    class="btn btn-primary btn-lg"
+                  >
+                    <i class="fas fa-globe-asia"></i> Tour quốc tế
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <!-- Search Box -->
+      <div class="search-container">
+        <div class="container">
+          <div class="search-card">
+            <div class="search-tabs">
+              <button class="search-tab active" data-tab="tour">
+                <i class="fas fa-map-marked-alt"></i> Tour
+              </button>
+              <button class="search-tab" data-tab="hotel">
+                <i class="fas fa-hotel"></i> Khách sạn
+              </button>
+              <button class="search-tab" data-tab="flight">
+                <i class="fas fa-plane"></i> Vé máy bay
+              </button>
+              <button class="search-tab" data-tab="combo">
+                <i class="fas fa-box"></i> Combo
+              </button>
+            </div>
+
+            <form class="search-form" id="searchForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label><i class="fas fa-map-marker-alt"></i> Điểm đến</label>
+                  <input
+                    type="text"
+                    placeholder="Bạn muốn đi đâu?"
+                    class="form-control"
+                    id="destination"
+                  />
+                </div>
+                <div class="form-group">
+                  <label><i class="fas fa-calendar-alt"></i> Ngày đi</label>
+                  <input type="date" class="form-control" id="departureDate" />
+                </div>
+                <div class="form-group">
+                  <label><i class="fas fa-calendar-alt"></i> Ngày về</label>
+                  <input type="date" class="form-control" id="returnDate" />
+                </div>
+                <div class="form-group">
+                  <label><i class="fas fa-users"></i> Số người</label>
+                  <div class="guest-selector">
+                    <button type="button" class="guest-btn minus">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input type="text" value="2" class="guest-count" readonly />
+                    <button type="button" class="guest-btn plus">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-search">
+                <i class="fas fa-search"></i> Tìm kiếm
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Khám Phá Theo Danh Mục</h2>
+          <p class="section-subtitle">Chọn loại hình du lịch phù hợp với bạn</p>
+        </div>
+
+        <div class="categories-grid">
+          <a href="tours.html?category=cao-cap" class="category-card">
+            <div class="category-icon luxury">
+              <i class="fas fa-gem"></i>
+            </div>
+            <h3>Tour Cao Cấp</h3>
+            <p>Trải nghiệm 5 sao</p>
+          </a>
+
+          <a href="tours.html?category=gia-dinh" class="category-card">
+            <div class="category-icon family">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Tour Gia Đình</h3>
+            <p>Hạnh phúc bên nhau</p>
+          </a>
+
+          <a href="tours.html?category=hanh-huong" class="category-card">
+            <div class="category-icon spiritual">
+              <i class="fas fa-place-of-worship"></i>
+            </div>
+            <h3>Tour Hành Hương</h3>
+            <p>Tâm linh - Tịnh tâm</p>
+          </a>
+
+          <a href="tours.html?category=phuot" class="category-card">
+            <div class="category-icon adventure">
+              <i class="fas fa-hiking"></i>
+            </div>
+            <h3>Tour Phượt</h3>
+            <p>Khám phá mạo hiểm</p>
+          </a>
+
+          <a href="tours.html?category=team-building" class="category-card">
+            <div class="category-icon team">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Team Building</h3>
+            <p>Gắn kết tập thể</p>
+          </a>
+
+          <a href="tours.html?category=trong-nuoc" class="category-card">
+            <div class="category-icon domestic">
+              <i class="fas fa-map"></i>
+            </div>
+            <h3>Tour Trong Nước</h3>
+            <p>Việt Nam tươi đẹp</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Tours -->
+    <section class="featured-tours" id="featured">
+      <div class="container">
+        <div class="section-header">
+          <div class="header-left">
+            <h2 class="section-title">Tour Nổi Bật</h2>
+            <p class="section-subtitle">Được yêu thích nhất tháng</p>
+          </div>
+          <div class="header-right">
+            <div class="nav-buttons">
+              <button class="nav-btn prev-btn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="nav-btn next-btn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tours-grid" id="featuredTours">
+          <!-- Tours loaded by JavaScript -->
+        </div>
+
+        <div class="text-center">
+          <a href="tours.html" class="btn btn-outline btn-view-all">
+            Xem tất cả tour <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotions -->
+    <section class="promotions-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Ưu Đãi Đặc Biệt</h2>
+          <p class="section-subtitle">Đặt tour ngay để nhận ưu đãi tốt nhất</p>
+        </div>
+
+        <div class="promotions-grid">
+          <div class="promotion-card hot">
+            <div class="promotion-badge">Giảm 50%</div>
+            <div class="promotion-content">
+              <div class="promotion-tag">Độc quyền</div>
+              <h3>Combo Du Lịch Hè 2024</h3>
+              <p>Tour 5N4Đ + Khách sạn 5 sao + Vé máy bay</p>
+              <div class="promotion-price">
+                <span class="original-price">25,000,000đ</span>
+                <span class="current-price">12,500,000đ</span>
+              </div>
+              <a href="#" class="btn btn-primary">Đặt ngay</a>
+            </div>
+          </div>
+
+          <div class="promotion-card">
+            <div class="promotion-badge">Trả góp 0%</div>
+            <div class="promotion-content">
+              <h3>Tour Châu Âu Mùa Thu</h3>
+              <p>Trải nghiệm 7 quốc gia châu Âu</p>
+              <div class="promotion-features">
+                <span
+                  ><i class="fas fa-check-circle"></i> Trả góp 12 tháng</span
+                >
+                <span><i class="fas fa-check-circle"></i> Tặng bảo hiểm</span>
+              </div>
+              <a href="#" class="btn btn-outline">Chi tiết</a>
+            </div>
+          </div>
+
+          <div class="promotion-card">
+            <div class="promotion-content">
+              <div class="promotion-tag">Mới</div>
+              <h3>Ưu Đãi Thành Viên Vàng</h3>
+              <p>Giảm thêm 10% cho thành viên Opulent</p>
+              <div class="promotion-countdown">
+                <h4>Kết thúc sau:</h4>
+                <div class="countdown-timer" id="countdown">
+                  <span class="time-box"><span class="time">05</span>Ngày</span>
+                  <span class="time-box"><span class="time">12</span>Giờ</span>
+                  <span class="time-box"><span class="time">30</span>Phút</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-outline">Đăng ký ngay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Tại Sao Chọn Opulent?</h2>
+          <p class="section-subtitle">Cam kết mang đến trải nghiệm tốt nhất</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Chất Lượng 5 Sao</h3>
+            <p>Đối tác toàn cầu, dịch vụ đạt chuẩn quốc tế</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>An Toàn Tuyệt Đối</h3>
+            <p>Bảo hiểm du lịch toàn cầu, hỗ trợ 24/7</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>Hỗ Trợ 24/7</h3>
+            <p>Đội ngũ tư vấn nhiệt tình, chuyên nghiệp</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-tags"></i>
+            </div>
+            <h3>Giá Tốt Nhất</h3>
+            <p>Cam kết giá cạnh tranh, không phát sinh phí</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-credit-card"></i>
+            </div>
+            <h3>Thanh Toán Linh Hoạt</h3>
+            <p>Trả góp 0% lãi suất, nhiều phương thức</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Đánh Giá Cao</h3>
+            <p>98% khách hàng hài lòng và quay lại</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Khách Hàng Nói Về Chúng Tôi</h2>
+          <p class="section-subtitle">Hơn 10,000 khách hàng hài lòng</p>
+        </div>
+
+        <div class="swiper testimonials-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Tour Châu Âu với Opulent thật tuyệt vời! Dịch vụ 5 sao, hướng
+                  dẫn viên nhiệt tình. Chắc chắn sẽ quay lại đặt tour tiếp!"
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/32.jpg"
+                    alt="Khách hàng"
+                  />
+                  <div>
+                    <h4>Chị Ngọc Anh</h4>
+                    <p>Tour Châu Âu 10N9Đ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Tour Đà Lạt gia đình rất tuyệt! Con cái thích thú, dịch vụ
+                  chu đáo. Cảm ơn Opulent đã mang đến kỳ nghỉ hoàn hảo."
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/54.jpg"
+                    alt="Khách hàng"
+                  />
+                  <div>
+                    <h4>Anh Minh Đức</h4>
+                    <p>Tour Đà Lạt 4N3Đ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Dịch vụ chuyên nghiệp từ A-Z. Tư vấn nhiệt tình, giá cả hợp
+                  lý. Đặc biệt là chính sách hỗ trợ khách hàng rất tốt."
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/67.jpg"
+                    alt="Khách hàng"
+                  />
+                  <div>
+                    <h4>Chị Thu Hà</h4>
+                    <p>Tour Nhật Bản 7N6Đ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Sẵn Sàng Cho Hành Trình Tiếp Theo?</h2>
+          <p>
+            Đăng ký nhận tin để nhận ưu đãi đặc biệt và thông tin tour mới nhất
+          </p>
+          <form class="cta-form">
+            <div class="input-group">
+              <input type="email" placeholder="Nhập email của bạn" required />
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Đăng ký
+              </button>
+            </div>
+            <p class="form-note">Chúng tôi cam kết không spam email của bạn</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="logo">
+              <i class="fas fa-crown"></i>
+              <span>Opulent</span>
+              <span class="logo-subtitle">Premium Travel</span>
+            </div>
+            <p class="footer-description">
+              Mang đến trải nghiệm du lịch cao cấp với dịch vụ 5 sao. Khám phá
+              thế giới với phong cách Opulent.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Về Opulent</h3>
+            <ul>
+              <li>
+                <a href="about.html"
+                  ><i class="fas fa-chevron-right"></i> Giới thiệu</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Đội ngũ</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Tuyển dụng</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Tin tức</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Dịch Vụ</h3>
+            <ul>
+              <li>
+                <a href="tours.html"
+                  ><i class="fas fa-chevron-right"></i> Tour du lịch</a
+                >
+              </li>
+              <li>
+                <a href="hotels.html"
+                  ><i class="fas fa-chevron-right"></i> Khách sạn</a
+                >
+              </li>
+              <li>
+                <a href="flights.html"
+                  ><i class="fas fa-chevron-right"></i> Vé máy bay</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Visa</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Bảo hiểm du lịch</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Hỗ Trợ</h3>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Câu hỏi thường gặp</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Hướng dẫn đặt tour</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Chính sách hủy tour</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Chính sách bảo mật</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Điều khoản sử dụng</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Liên Hệ</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Nguyễn Văn Linh, Q.7,
+                TP.HCM
+              </li>
+              <li><i class="fas fa-phone"></i> 1900 1234</li>
+              <li><i class="fas fa-envelope"></i> info@opulent.vn</li>
+              <li><i class="fas fa-clock"></i> 8:00 - 22:00 hàng ngày</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="payment-methods">
+            <span>Chấp nhận thanh toán:</span>
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-amex"></i>
+            <i class="fab fa-cc-jcb"></i>
+            <i class="fas fa-qrcode"></i>
+            <i class="fas fa-university"></i>
+          </div>
+          <p class="copyright">
+            &copy; 2024 Opulent Travel. All rights reserved.
+            <span>MST: 0101234567</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <div class="modal-header">
+          <h2>Đăng Nhập</h2>
+          <p>Chào mừng quay lại Opulent</p>
+        </div>
+        <form id="loginForm" class="modal-form">
+          <div class="form-group">
+            <input type="email" placeholder="Email" required />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Mật khẩu" required />
+          </div>
+          <div class="form-options">
+            <label class="checkbox">
+              <input type="checkbox" /> Ghi nhớ đăng nhập
+            </label>
+            <a href="#" class="forgot-password">Quên mật khẩu?</a>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Đăng nhập
+          </button>
+          <div class="divider">
+            <span>hoặc đăng nhập với</span>
+          </div>
+          <div class="social-login">
+            <button type="button" class="btn btn-facebook">
+              <i class="fab fa-facebook-f"></i> Facebook
+            </button>
+            <button type="button" class="btn btn-google">
+              <i class="fab fa-google"></i> Google
+            </button>
+          </div>
+          <p class="modal-footer">
+            Chưa có tài khoản? <a href="#" id="showRegister">Đăng ký ngay</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="api/api-client.js"></script>
+
+    <script>
+      // Initialize Swipers
+      const heroSwiper = new Swiper(".hero-swiper", {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+      });
+
+      const testimonialsSwiper = new Swiper(".testimonials-swiper", {
+        loop: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+
+      // Featured Tours Swiper
+      let toursSwiper = null;
+
+      // Initialize tours swiper when DOM is loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load featured tours
+        loadFeaturedTours();
+
+        // Initialize countdown timer
+        initCountdown();
+
+        // Initialize search functionality
+        initSearch();
+
+        // Initialize mobile menu
+        initMobileMenu();
+
+        // Initialize back to top button
+        initBackToTop();
+
+        // Initialize modals
+        initModals();
+
+        // Initialize guest selector
+        initGuestSelector();
+      });
+
+      async function loadFeaturedTours() {
+        try {
+          // Fetch tours from API
+          const tours = await fetchTours({ limit: 6, featured: true });
+          displayTours(tours);
+        } catch (error) {
+          console.error("Error loading tours:", error);
+          // Fallback to sample data if API fails
+          const sampleTours = getSampleTours();
+          displayTours(sampleTours);
+        }
+      }
+
+      function getSampleTours() {
+        return [
+          {
+            id: 1,
+            name: "Tour Đà Lạt 4N3Đ: Thành Phố Ngàn Hoa",
+            short_description:
+              "Khám phá thành phố mộng mơ với vườn hoa, đồi chè và không khí se lạnh",
+            duration_days: 4,
+            duration_nights: 3,
+            destination: "Đà Lạt",
+            price_adult: 5990000,
+            discount_percent: 15,
+            featured_image:
+              "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3",
+            rating: 4.8,
+            reviews: 124,
+          },
+          {
+            id: 2,
+            name: "Tour Phú Quốc 5N4Đ: Thiên Đường Biển Đảo",
+            short_description:
+              "Trải nghiệm thiên đường biển đảo với bãi cát trắng, nước biển trong xanh",
+            duration_days: 5,
+            duration_nights: 4,
+            destination: "Phú Quốc",
+            price_adult: 8990000,
+            discount_percent: 20,
+            featured_image:
+              "https://images.unsplash.com/photo-1552465011-b4e30bf7349d?ixlib=rb-4.0.3",
+            rating: 4.9,
+            reviews: 89,
+          },
+          {
+            id: 3,
+            name: "Tour Bali 7N6Đ: Hòn Đảo Thần Thoại",
+            short_description:
+              "Khám phá văn hóa độc đáo và cảnh quan tuyệt đẹp của Bali",
+            duration_days: 7,
+            duration_nights: 6,
+            destination: "Bali, Indonesia",
+            price_adult: 25990000,
+            discount_percent: 10,
+            featured_image:
+              "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3",
+            rating: 4.7,
+            reviews: 156,
+          },
+          {
+            id: 4,
+            name: "Tour Hạ Long - Sapa 6N5Đ",
+            short_description:
+              "Kết hợp kỳ quan thiên nhiên với văn hóa vùng cao Tây Bắc",
+            duration_days: 6,
+            duration_nights: 5,
+            destination: "Hạ Long - Sapa",
+            price_adult: 12490000,
+            discount_percent: 12,
+            featured_image:
+              "https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3",
+            rating: 4.8,
+            reviews: 203,
+          },
+        ];
+      }
+
+      function displayTours(tours) {
+        const container = document.getElementById("featuredTours");
+
+        if (!tours || tours.length === 0) {
+          container.innerHTML = '<div class="no-tours">Không có tour nào</div>';
+          return;
+        }
+
+        let html = "";
+
+        tours.forEach((tour) => {
+          const finalPrice =
+            tour.price_adult * (1 - tour.discount_percent / 100);
+          const formattedPrice = new Intl.NumberFormat("vi-VN", {
+            style: "currency",
+            currency: "VND",
+          }).format(finalPrice);
+
+          const originalPrice =
+            tour.discount_percent > 0
+              ? new Intl.NumberFormat("vi-VN", {
+                  style: "currency",
+                  currency: "VND",
+                }).format(tour.price_adult)
+              : "";
+
+          html += `
+                    <div class="tour-card">
+                        ${
+                          tour.discount_percent > 0
+                            ? `<div class="tour-badge">-${tour.discount_percent}%</div>`
+                            : ""
+                        }
+                        
+                        <div class="tour-image">
+                            <img src="${
+                              tour.featured_image ||
+                              "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3"
+                            }" 
+                                 alt="${tour.name}" loading="lazy">
+                            <button class="tour-wishlist" data-tour-id="${
+                              tour.id
+                            }">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="tour-content">
+                            <div class="tour-rating">
+                                <i class="fas fa-star"></i>
+                                <span>${tour.rating || 4.5}</span>
+                                <span class="review-count">(${
+                                  tour.reviews || 0
+                                } đánh giá)</span>
+                            </div>
+                            
+                            <h3 class="tour-title">${tour.name}</h3>
+                            
+                            <div class="tour-meta">
+                                <span><i class="fas fa-clock"></i> ${
+                                  tour.duration_days
+                                }N${tour.duration_nights}Đ</span>
+                                <span><i class="fas fa-map-marker-alt"></i> ${
+                                  tour.destination
+                                }</span>
+                            </div>
+                            
+                            <p class="tour-description">${
+                              tour.short_description || "Tour du lịch cao cấp"
+                            }</p>
+                            
+                            <div class="tour-price">
+                                <div class="price-current">${formattedPrice}</div>
+                                ${
+                                  originalPrice
+                                    ? `<div class="price-original">${originalPrice}</div>`
+                                    : ""
+                                }
+                                <span class="price-per">/người</span>
+                            </div>
+                            
+                            <div class="tour-actions">
+                                <a href="tour-detail.html?id=${
+                                  tour.id
+                                }" class="btn btn-outline">
+                                    <i class="fas fa-info-circle"></i> Chi tiết
+                                </a>
+                                <button class="btn btn-primary book-now" data-tour-id="${
+                                  tour.id
+                                }">
+                                    <i class="fas fa-shopping-cart"></i> Đặt ngay
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+        });
+
+        container.innerHTML = html;
+
+        // Add event listeners to book buttons
+        document.querySelectorAll(".book-now").forEach((btn) => {
+          btn.addEventListener("click", function () {
+            const tourId = this.getAttribute("data-tour-id");
+            window.location.href = `booking.html?tour=${tourId}`;
+          });
+        });
+
+        // Add event listeners to wishlist buttons
+        document.querySelectorAll(".tour-wishlist").forEach((btn) => {
+          btn.addEventListener("click", function () {
+            const icon = this.querySelector("i");
+            const tourId = this.getAttribute("data-tour-id");
+
+            if (icon.classList.contains("far")) {
+              icon.classList.remove("far");
+              icon.classList.add("fas");
+              this.classList.add("active");
+              addToWishlist(tourId);
+            } else {
+              icon.classList.remove("fas");
+              icon.classList.add("far");
+              this.classList.remove("active");
+              removeFromWishlist(tourId);
+            }
+          });
+        });
+      }
+
+      function initCountdown() {
+        const countdownElement = document.getElementById("countdown");
+        if (!countdownElement) return;
+
+        // Set end date (5 days from now)
+        const endDate = new Date();
+        endDate.setDate(endDate.getDate() + 5);
+
+        function updateCountdown() {
+          const now = new Date();
+          const timeLeft = endDate - now;
+
+          if (timeLeft < 0) {
+            countdownElement.innerHTML =
+              '<span class="time-box"><span class="time">00</span>Ngày</span>';
+            return;
+          }
+
+          const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+          );
+
+          const daysElement = countdownElement.querySelector(
+            ".time-box:nth-child(1) .time"
+          );
+          const hoursElement = countdownElement.querySelector(
+            ".time-box:nth-child(2) .time"
+          );
+          const minutesElement = countdownElement.querySelector(
+            ".time-box:nth-child(3) .time"
+          );
+
+          if (daysElement)
+            daysElement.textContent = days.toString().padStart(2, "0");
+          if (hoursElement)
+            hoursElement.textContent = hours.toString().padStart(2, "0");
+          if (minutesElement)
+            minutesElement.textContent = minutes.toString().padStart(2, "0");
+        }
+
+        // Update every minute
+        updateCountdown();
+        setInterval(updateCountdown, 60000);
+      }
+
+      function initSearch() {
+        const searchForm = document.getElementById("searchForm");
+        const searchTabs = document.querySelectorAll(".search-tab");
+        const searchInput = document.querySelector(".search-input");
+
+        if (searchForm) {
+          searchForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const destination = document.getElementById("destination").value;
+            const date = document.getElementById("departureDate").value;
+            const guests = document.querySelector(".guest-count").value;
+
+            // Navigate to tours page with search parameters
+            let url = "tours.html?";
+            if (destination)
+              url += `destination=${encodeURIComponent(destination)}&`;
+            if (date) url += `date=${date}&`;
+            if (guests) url += `guests=${guests}`;
+
+            window.location.href = url;
+          });
+        }
+
+        // Handle search tabs
+        searchTabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            searchTabs.forEach((t) => t.classList.remove("active"));
+            this.classList.add("active");
+
+            const tabType = this.getAttribute("data-tab");
+            updateSearchForm(tabType);
+          });
+        });
+
+        // Handle search input in navbar
+        if (searchInput) {
+          searchInput.addEventListener("input", function (e) {
+            const query = e.target.value;
+            if (query.length > 2) {
+              // Implement search suggestions here
+              console.log("Searching for:", query);
+            }
+          });
+        }
+      }
+
+      function updateSearchForm(tabType) {
+        const formGroups = document.querySelectorAll(
+          ".search-form .form-group"
+        );
+
+        // Update labels and placeholders based on tab type
+        switch (tabType) {
+          case "hotel":
+            document.querySelector("#destination").placeholder =
+              "Thành phố, khách sạn...";
+            break;
+          case "flight":
+            document.querySelector("#destination").placeholder = "Điểm đến...";
+            break;
+          case "tour":
+          default:
+            document.querySelector("#destination").placeholder =
+              "Bạn muốn đi đâu?";
+            break;
+        }
+      }
+
+      function initMobileMenu() {
+        const mobileToggle = document.querySelector(".mobile-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (mobileToggle && navMenu) {
+          mobileToggle.addEventListener("click", function () {
+            navMenu.classList.toggle("active");
+            mobileToggle.innerHTML = navMenu.classList.contains("active")
+              ? '<i class="fas fa-times"></i>'
+              : '<i class="fas fa-bars"></i>';
+          });
+
+          // Close mobile menu when clicking outside
+          document.addEventListener("click", function (e) {
+            if (!e.target.closest(".navbar")) {
+              navMenu.classList.remove("active");
+              mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+          });
+        }
+
+        // Handle dropdowns on mobile
+        const dropdowns = document.querySelectorAll(".dropdown");
+        dropdowns.forEach((dropdown) => {
+          const link = dropdown.querySelector(".nav-link");
+          link.addEventListener("click", function (e) {
+            if (window.innerWidth <= 768) {
+              e.preventDefault();
+              dropdown.classList.toggle("active");
+            }
+          });
+        });
+      }
+
+      function initBackToTop() {
+        const backToTopBtn = document.getElementById("backToTop");
+
+        if (backToTopBtn) {
+          window.addEventListener("scroll", function () {
+            if (window.pageYOffset > 300) {
+              backToTopBtn.classList.add("visible");
+            } else {
+              backToTopBtn.classList.remove("visible");
+            }
+          });
+
+          backToTopBtn.addEventListener("click", function () {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          });
+        }
+      }
+
+      function initModals() {
+        const loginBtn = document.getElementById("login-btn");
+        const loginModal = document.getElementById("loginModal");
+        const closeModal = loginModal.querySelector(".close-modal");
+
+        if (loginBtn && loginModal) {
+          loginBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            loginModal.classList.add("active");
+            document.body.style.overflow = "hidden";
+          });
+
+          closeModal.addEventListener("click", function () {
+            loginModal.classList.remove("active");
+            document.body.style.overflow = "";
+          });
+
+          // Close modal when clicking outside
+          loginModal.addEventListener("click", function (e) {
+            if (e.target === loginModal) {
+              loginModal.classList.remove("active");
+              document.body.style.overflow = "";
+            }
+          });
+
+          // Handle login form submission
+          const loginForm = document.getElementById("loginForm");
+          if (loginForm) {
+            loginForm.addEventListener("submit", function (e) {
+              e.preventDefault();
+              // Implement login logic here
+              console.log("Login submitted");
+              // For demo, close modal after 1 second
+              setTimeout(() => {
+                loginModal.classList.remove("active");
+                document.body.style.overflow = "";
+                showNotification("Đăng nhập thành công!", "success");
+              }, 1000);
+            });
+          }
+        }
+      }
+
+      function initGuestSelector() {
+        const minusBtn = document.querySelector(".guest-btn.minus");
+        const plusBtn = document.querySelector(".guest-btn.plus");
+        const guestCount = document.querySelector(".guest-count");
+
+        if (minusBtn && plusBtn && guestCount) {
+          minusBtn.addEventListener("click", function () {
+            let count = parseInt(guestCount.value);
+            if (count > 1) {
+              guestCount.value = count - 1;
+            }
+          });
+
+          plusBtn.addEventListener("click", function () {
+            let count = parseInt(guestCount.value);
+            if (count < 10) {
+              guestCount.value = count + 1;
+            }
+          });
+        }
+      }
+
+      function addToWishlist(tourId) {
+        // Implement wishlist logic here
+        console.log("Added tour to wishlist:", tourId);
+        showNotification("Đã thêm vào yêu thích!", "success");
+      }
+
+      function removeFromWishlist(tourId) {
+        // Implement wishlist removal logic here
+        console.log("Removed tour from wishlist:", tourId);
+        showNotification("Đã xóa khỏi yêu thích!", "info");
+      }
+
+      function showNotification(message, type = "info") {
+        // Create notification element
+        const notification = document.createElement("div");
+        notification.className = `notification ${type}`;
+        notification.innerHTML = `
+                <i class="fas fa-${
+                  type === "success" ? "check-circle" : "info-circle"
+                }"></i>
+                <span>${message}</span>
+            `;
+
+        // Add to body
+        document.body.appendChild(notification);
+
+        // Show notification
+        setTimeout(() => notification.classList.add("show"), 100);
+
+        // Remove after 3 seconds
+        setTimeout(() => {
+          notification.classList.remove("show");
+          setTimeout(() => notification.remove(), 300);
+        }, 3000);
+      }
+
+      // Helper function for API call (mock for demo)
+      async function fetchTours(params = {}) {
+        // In production, this would call your actual API
+        // For demo, return sample data after a delay
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve(getSampleTours());
+          }, 500);
+        });
+      }
+    </script>
+  </body>
+</html>
